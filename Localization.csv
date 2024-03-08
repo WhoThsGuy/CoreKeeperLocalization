@@ -711,6 +711,7 @@ Emotes/IDontHaveTheRequiredComponents	Text		У мене немає компон�
 Emotes/INeedADrillForThis	Text		Мені потрібна дриль для цього
 Emotes/INeedBetterToolsForTheseWaters	Text	Means that player needs a better fishing rod or other means of fishing tools	Мені потрібні кращі інструменти для цих вод
 Emotes/IShouldEat	Text		Треба щось з'їсти.
+Emotes/IShouldGatherMyFriends	Text		Треба покликати друзів.
 Emotes/ImHungry	Text		Я дуже голодний.
 Emotes/ItDoesntDoAnything	Text	Shown when trying to interact with something that does'nt work such as the Core when it is not powered up.	Нічого не виходить.
 Emotes/ItsEmpty	Text	Used when for example the water can is empty	Порожньо.
@@ -749,9 +750,13 @@ Error/BackingStorageFull	Text		Дисковий або хмарний прост
 Error/BadProtocolVersion	Text		Невідповідність версії гри
 Error/Canceled	Text		Дію було скасовано
 Error/CharacterVersionTooHigh	Text		Цей персонаж був створений за допомогою більш пізньої версії гри. Будь ласка, перевірте наявність оновлень.
+Error/CompileFailed	Text		Помилка обчислення
 Error/ConnectionClose	Text		З'єднання закрито
+Error/FileAccess	Text		Файл недоступний
 Error/GameNotFound	Text		Не вдалося знайти гру
 Error/HostNotReady	Text		Хост не готовий
+Error/InternalError	Text		Внутрішня помилка
+Error/InvalidAccess	Text		Помилка доступу
 Error/InvalidRpc	Text		Невірне мережеве повідомлення
 Error/MaxConnectionAttempts	Text		Не вдалося з'єднатися після надто великої кількості спроб
 Error/NoNetwork	Text		Немає мережі
@@ -3996,6 +4001,7 @@ Menu/DeleteCreativeCharactersMenu	Text		Меню видалення творчи
 Menu/DeleteOptions	Text		Видалити опції
 Menu/DeleteProgressOptions	Text		Видалити опції прогресу
 Menu/DeleteWorldsMenu	Text		Видалення світів меню Видалення світів
+Menu/Disable	Text		Вимкнути
 Menu/DisplayOptions	Text		Налаштування відображення
 Menu/DynamicWater	Text		Динамічна вода
 Menu/EnterWorldName	Text		Введіть назву світу...
@@ -4010,11 +4016,17 @@ Menu/GraphicsOptions	Text		Налаштування графіки
 Menu/Hardcore	Text		Жорсткий
 Menu/HardcoreDesc	Text		Персонажі в режимі хардкор безповоротно втрачаються після смерті і не можуть бути відроджені.
 Menu/HideGameID	Text		Приховати ID гри
+Menu/Ignore	Text		Ігнорувати
 Menu/JoinGame	Text		Приєднатися до гри
 Menu/LightQuality	Text		Якість освітлення
+Menu/LoadAnyway	Text		Все одно завантажте
 Menu/LocalModMissingClientDialogue	Text		Відсутній необхідний мод {0}.
 Menu/LocalModMissingServerDialogue	Text		На сервері відсутній необхідний мод {0}.
 Menu/ManagePlayers	Text		Керування гравцями
+Menu/ModFailedToLoadWarning	Text		Не вдалося завантажити мод: {0} ({1})
+Menu/ModIncompatibleWarning	Text		Цей мод несумісний з цією версією: {0}
+Menu/ModMenuButtonModsLoaded	Text		Моди ({0} завантажені)
+Menu/ModMenuButtonModsLoadedPendingChanges	Text		Моди ({0} завантажені)*
 Menu/ModMenuPopUp	Text		Дякуємо, що завітали до розділу МОДИ! Зверніть увагу, що наша підтримка модифікацій наразі перебуває в процесі розробки. Оскільки гра нещодавно вийшла, можливо, ще не всі модифікації доступні. Крім того, використання модів може призвести до непередбачуваних проблем або поведінки в грі. Використовуйте їх на власний розсуд і насолоджуйтеся творчими можливостями!
 Menu/ModMissingClientDialogue	Text		Відсутній необхідний мод {0}. Бажаєте встановити його (потребує перезапуску)?
 Menu/ModMissingServerDialogue	Text		На сервері відсутній необхідний мод {0}. Бажаєте вимкнути його (потребує перезапуску)?
@@ -4030,6 +4042,7 @@ Menu/Options	Text		Налаштування
 Menu/OverrideSeason	Text		Перевизначити сезон
 Menu/PacketRate	Text	As in the rate of network packets being sent	Швидкість надсилання мережевих пакетів
 Menu/ParticlesQuality	Text		Якість частинок
+Menu/PendingChanges	Text		*Очікуються зміни
 Menu/PerformanceOptions	Text		Налаштування продуктивності
 Menu/Ping	Text	Ping to server, shown in pause menu	Пінг: {0} мс
 Menu/Quit	Text		Вийти
@@ -4238,6 +4251,7 @@ SkillTalents/ChanceToApplySlimeOnRangeHit	Text		Липкі кулі
 SkillTalents/ChanceToGainHigherRarityCookedFood	Text		Шеф-кухар
 SkillTalents/ChanceToGainHigherRarityPlants	Text		Експерт-садівник
 SkillTalents/ChanceToNotDieOnLethalHit	Text		Обманути смерть
+SkillTalents/ChanceToPreserveBait	Text		Жорстка наживка
 SkillTalents/ChanceToRestoreHealthOnMeleeHit	Text		Вируюче лезо
 SkillTalents/ChanceToStunOnRangeHit	Text		Оглушливий постріл
 SkillTalents/CostReductionAtAnvil	Text		Коваль
@@ -4260,6 +4274,8 @@ SkillTalents/FishChanceIncrease	Text		Удача Рибалки
 SkillTalents/FishStartsCloserToBeReeledIn	Text		Перевага рибалки
 SkillTalents/FishingAsRangeDamage	Text		Натренований приціл
 SkillTalents/FoodBuffsLastLonger	Text		Довговічна їжа
+SkillTalents/GainDurabilityOnOreWall	Text		Самовідновлюваний сплав
+SkillTalents/GainHungerFromHarvesting	Text		Свято для очей
 SkillTalents/GainMoreFood	Text		Їжте овочі!
 SkillTalents/GainMoreFoodFromCookedFood	Text		Поживні речовини
 SkillTalents/GuaranteedRangeCritsChance	Text		Виявлення слабкості
